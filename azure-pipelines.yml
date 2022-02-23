@@ -15,6 +15,3 @@ steps:
       Write-Host $value
       $value2 = Get-Content ASP.NET_MVCModel-3.1-/README.md
       Write-Host $value2
-
-
-# ASP.NET_MVCModel-3.1-
