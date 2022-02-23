@@ -1,0 +1,18 @@
+trigger: none
+
+pool:
+  vmImage: windows-latest
+
+steps:
+- checkout: self
+  submodules: false
+  persistCredentials : true
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      $value = Get-Content $(System.DefaultWorkingDirectory)/README.md
+      Write-Host $value
+
+
+# ASP.NET_MVCModel-3.1-
