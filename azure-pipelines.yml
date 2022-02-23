@@ -11,10 +11,10 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      $value = Get-Content $(System.DefaultWorkingDirectory)/README.md
+      $value = Get-Content README.md
       Write-Host $value
-      $value2 = Get-Content $(System.DefaultWorkingDirectory)/ASP.NET_MVCModel-3.1-/README.md
-      Write-Host $value2
+      # $value2 = Get-Content $(System.DefaultWorkingDirectory)/ASP.NET_MVCModel-3.1-/README.md
+      # Write-Host $value2
 
 
 # ASP.NET_MVCModel-3.1-
